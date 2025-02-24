@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(236, 236, 230);
+    font-family: 'Poppins';
+}
+
+form{
+    text-align: center;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    margin-top: 30px;
+    max-width: 340px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgb(112, 161, 252);
+}
+
+h1{
+    font-weight: 500;
+    font-size: 2.6em;
+}
+
+h2{
+    margin: 12px 0;
+}
+
+#textArea{
+    margin: 18px 0;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid rgb(45, 146, 228);
+    font-size: 1.7em;
+    color: rgb(82, 82, 82);
+    text-align: center;
+    width: 100px;
+    font-weight: 500;
+}
+
+label{
+    font-size: 1.5em;
+}
+
+#mySubmit{
+    padding: 7px 12px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 102, 0);
+    color: white;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+#mySubmit:hover{
+    background-color: rgb(218, 87, 0);
+}
+
