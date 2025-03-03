@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="passGen.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="container container-sm m-auto text-center p-6">
+        <h1 class="text-5xl font-bold text-indigo-700 text-center mb-4 mt-4">Random Password Generator</h1>
+        <h4 class="text-xl text-center">Create a strong password, include and exclude you preferred characters</h4>
+        
+
+        <div class="my-6">
+            <label for="passwordLength" class="text-xl font-semibold">Password Length</label><br>
+            <input id="passwordLength" type="number" value = "1" min="1" max="16" class="border-2 rounded-lg p-1 px-10 my-4 text-center"> <br>
+
+            <p  class="text-xl my-4 font-semibold ">Characters Used</p>
+
+            <input id="uppercaseLetters" type="checkbox" class="border-2 rounded-lg w-5 h-5 mr-1 my-2">
+            <label for="uppercaseLetters" class="font-bold text-2xl">ABC</label>
+
+            <input id="lowercaseLetters" type="checkbox" class="border-2 rounded-lg w-5 h-5 ml-4 mr-1 my-2">
+            <label for="lowercaseLetters" class="font-bold text-2xl">abc</label>
+
+            <input id="numbers" type="checkbox" class="border-2 rounded-lg w-5 h-5 ml-4 mr-1 my-2">
+            <label for="numbers" class="font-bold text-2xl">123</label>
+
+            <input id="characters" type="checkbox" class="border-2 rounded-lg w-5 h-5 ml-4 mr-1 my-2">
+            <label for="characters" class="font-bold text-2xl">#$%</label>
+            
+        </div>
+
+        <h4 id="pass" class="text-xl mb-2 font-bold"></h4>
+        <button id="passwordBtn" type="button" class="mt-6 bg-indigo-700 hover:bg-indigo-500 px-6 py-3 text-lg font-bold tracking-wider text-white rounded-2xl uppercase" onclick="myPassword()">Generate Password</button>
+        
+    </div>
+
+    <script src="passGen.js"></script>
+</body>
+</html>
